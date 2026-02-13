@@ -1,0 +1,180 @@
+
+/**********************Body Style*********/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    align-items: center;
+    margin: 0;
+}
+body.day_mode{
+    align-items: center;
+    --bg-glow-food-place-card: 0 0 40px rgba(241, 172, 82, 0.8);
+    
+    --heading-colour-food-section: #1F6F78;
+    --heading-colour-hangout-section: #243A5E;
+
+    --bg-colour-food-section: #EFE9E3;
+    --bg-colour-hangout-section: #EAF4F8;
+    --catchphrase-colour: #6FA8B6;
+
+    --header-image-layover-colour: linear-gradient(to bottom, rgb(233, 196, 106,0.5), rgb(244, 162, 97,0.5), rgb(231, 111, 81,0.5));
+
+    --night-mode-button-bg-colour: #FBFAF8;
+    --night-mode-button-icon-colour: linear-gradient(to left, #f72585, #b5179e, #7209b7);
+}
+body.night_mode{
+    align-items: center;
+    --bg-glow-food-place-card: 0 0 40px rgba(255, 255, 255, 0.8);
+    
+    --heading-colour-food-section: #C50CF8;
+    --heading-colour-hangout-section: #B50F86;
+
+    --bg-colour-food-section: linear-gradient(135deg, #4E1378, #0B0B0B 70%, #650454);
+    --bg-colour-hangout-section: linear-gradient(135deg, #141A51 5%, #0B0B0B 70%, #173947);
+    --catchphrase-colour: #6FA8B6;
+
+    --header-image-layover-colour: linear-gradient(to bottom, rgb(78, 19, 120,0.5), rgb(5, 130, 202, 0.5), rgb(0, 100, 148, 0.5));
+
+    --night-mode-button-bg-colour: #090909;
+    --night-mode-button-icon-colour: linear-gradient(to left, #ad2e24, #ff8500, #ffea00);
+}
+
+
+/*night mode button tutorial: https://www.youtube.com/watch?v=_gKEUYarehE*/
+#Night_Mode_btn {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    background: var(--night-mode-button-icon-colour);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    top: 380px;
+    left: 580px;
+}
+
+#Night_Mode_btn svg{
+    fill: var(--night-mode-button-bg-colour);
+    width: 50px;
+    height: auto;
+}
+
+#Night_Mode_btn svg:first-child {
+    display: none;
+}
+
+body.night_mode #Night_Mode_btn svg:last-child {
+    display: none;
+}
+
+body.night_mode #Night_Mode_btn svg:first-child {
+    display: block;
+}
+
+
+/*Header Image Style*/
+#header_image {
+    width: 1265px;
+    height: 500px;
+    background: 
+        var(--header-image-layover-colour),
+        url(Sydney_Harbour_Header_Image.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#header_image h1 {
+    /*stay the same*/
+    font-family: "Fredericka the Great", serif;
+    font-weight: 300;
+    font-size: 70px;
+    font-style: normal;
+    padding: 50px;     
+}
+
+#header_image p {
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+#button_use_info {
+    margin: 70px;
+}
+
+/*Card Style*/ 
+.Card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    padding: 10px;
+    justify-items: center;
+}
+
+#Food {
+    margin: 0;
+    padding:0;
+    text-align: center;
+    background: var(--bg-colour-food-section);
+}
+
+#Food h1 {
+    /*change with night mode*/
+    color: var(--heading-colour-food-section);
+}
+
+#Hangout {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: var(--bg-colour-hangout-section);
+}
+
+#Hangout h1 {
+    color: var(--heading-colour-hangout-section);
+}
+
+#Food h1, #Hangout h1 {
+    /*stay the same*/
+    font-family: "Fredericka the Great", serif;
+    font-weight: 300;
+    font-size: 40px;
+    font-style: normal;   
+}
+.catchphrase {
+    color: var(--catchphrase-colour);
+    font-family: "Shadows Into Light Two", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+}
+
+.place_card {
+    width: 480px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.place_card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: var(--bg-glow-food-place-card);
+    
+}
+
+.place_card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}

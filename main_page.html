@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Sydney</title>
+    <link rel = "stylesheet" href = "main_page_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+</head>
+<body class = "day_mode">
+    <div id = "header_image">
+        <h1>Sydney Exploration</h1>
+        <p>From sunrise coffees by the coast to moonlit dinners in the heart of the city, <br> 
+            Sydney comes alive at every hour.<br>
+            Explore the best places to eat, unwind and connect
+        </p>
+        <p id = "button_use_info">Click to turn on <b id = "which_mode">Night Mode</b></p>
+        <!--You would have a background image here-->
+        <button id = "Night_Mode_btn"> 
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M338.5-338.5Q280-397 280-480t58.5-141.5Q397-680 480-680t141.5 58.5Q680-563 680-480t-58.5 141.5Q563-280 480-280t-141.5-58.5ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+        </button>
+    </div>
+    <section id = "Food">
+        <h1>Food, Drinks and Good Times</h1>
+        <p class = "catchphrase">Made for calm mornings</p>
+        <div class = "Card">
+            <!--section for the cafe-->
+            <div class = "place_card"
+                data-day-image = "Fika_cafe_image.jpg"
+                data-night-image = "Alexandria_in_the_ground_restaurant_image.jpg"
+                data-day-title = "Fika"
+                data-night-title = "In the Grounds Alexandria"
+                data-day-info = "Tucked away near the manly beach, Fika is your hidden Swedish escape. Warm buns, golden waffles, and tea for every mood."
+                data-night-info = "A nighttime escape filled with glowing lights, live music, and warm food made for long conversations."
+            >
+
+                <img src = "Fika_cafe_image.jpg" alt = "image of breakfast food offered at Fika, NSW">
+                <h3>Fika</h3>
+                <p>Tucked away near the manly beach, Fika is your hidden Swedish escape. Warm buns, golden waffles, and tea for every mood.</p>
+                <!--alexandria in the grounds-->
+            </div>
+            <div class = "place_card"
+                data-day-image = "Gotchi_cafe_image.png"
+                data-night-image = "The_Rook_bar_image.jpg"
+                data-day-title = "Gotchi" 
+                data-night-title = "The Rook"
+                data-day-info = "Before begining your journey to the snowy mountain region, Gotchi welcomes you with warm plates, thoughtful service, and experiencing korean-Australian fusion like never before"
+                data-night-info = "Perfect for late-night catch-ups and small celebrations, The Rook pairs city views with delicious drinks and food."
+            >   
+                <img src = "Gotchi_cafe_image.png">
+                <h3>Parc</h3>
+                <p>Before begining your journey to the snowy mountain region, Gotchi welcomes you with warm plates, thoughtful service, and experiencing korean-Australian fusion like never before</p>
+                <!--the cafe in snowymountain will include image and text a border-->
+                
+            </div>
+            <div class = "place_card"
+                data-day-image = "Omi_cafe_image.jpg"
+                data-night-image = "Icy_Spicy_restaurant_image.png"
+                data-day-title = "Omi"
+                data-night-title = "Icy Spicy"
+                data-day-info = "Omi is a calm escape for slow mornings, serving delicate Japanese flavours and cosy café vibes"
+                data-night-info = "From spicy dumplings to icy desserts, Icy Spicy is your go-to late-night fix."
+            >
+                <!--omi will include image and text a border-->
+                <img src = "Omi_cafe_image.jpg">
+                <h3>Omi</h3>
+                <p>Omi is a calm escape for slow mornings, serving delicate Japanese flavours and cosy café vibes</p>
+                <!--in the rocks?-->
+            </div>
+            <div class = "place_card"
+                data-day-image = "Barone_Cafe_Image.png"
+                data-night-image = "Chatkazz_Restaurant_Image.png"
+                data-day-title = "Barone"
+                data-night-title = "Chatkazz"
+                data-day-info = "Perfect for cold mornings, Barone serves comforting Italian dishes that warm you from the first bite."
+                data-night-info = "A bustling nighttime spot for Indian food lovers, offering variety, flavour, and vibrant vibes."
+            >
+                <!--4th cafe will include image and text border-->
+                <!-- ___-->
+                <img src = "Barone_Cafe_Image.png">
+                <h3>Barone</h3>
+                <p>Perfect for cold mornings, Barone serves comforting Italian dishes that warm you from the first bite.</p>
+            </div>
+        </div>
+    </section>
+    <section id = "Hangout">
+        <h1>Spots that turn "one hour" into three</h1>
+        <p class = "catchphrase"> With good vibes and golden light</p>
+        <div class = "Card">
+            <!--section for the places to visit-->
+            <div class = "place_card"
+                data-day-image = "Bondi_Beach_Image.jpg"
+                data-night-image = "Kono_Kareoke_Image.jpg"
+                data-day-title = "Bondi Beach"
+                data-night-title = "Kono Kareoke"
+                data-day-info = "A laid-back spot where mornings are spent swimming, strolling along the shore, and soaking in ocean views."
+                data-night-info = "Sing, or scream, your heart out in Kono Karaoke’s private booths, where late nights turn into unforgettable performances."
+            >
+                <img src = "Bondi_Beach_Image.jpg">
+                <h3>Bondi Beach</h3>
+                <p>A laid-back spot where mornings are spent swimming, strolling along the shore, and soaking in ocean views.</p>
+                <!--beach for the morning-->
+                <!--kareoke. will include image and text a border-->
+            </div>
+            <div class = "place_card"
+                data-day-image = "centennial_park_image.jpg"
+                data-night-image = "Hama_Film_Photobooth_Image.png"
+                data-day-title = "Centennial Park"
+                data-night-title = "Hama Film Photo"
+                data-day-info = "Whether you’re here to play, relax, stroll, or explore, Centennial Park offers something for everyone."
+                data-night-info = "A late-night stop for capturing memories, with playful props and stylish background."
+            >
+                <!--sydney olympic park liekt the big one-->
+                <img src = "centennial_park_image.jpg">
+                <h3>Centennial Park</h3>
+                <p>Whether you’re here to play, relax, stroll, or explore, Centennial Park offers something for everyone.</p>
+                <!--photo cafe will include image and text a border-->
+            </div>
+            <div class = "place_card"
+                data-day-image = "Glebe_Market.jpg"
+                data-night-image = "Sydney_harbour_bridge_image.jpg"
+                data-day-title = "Glebe Market"
+                data-night-title = "Harbour Bridge"
+                data-day-info = "Wander through the market, where stalls are filled with thrift finds, handmade jewellery, food, and hidden gems."
+                data-night-info = "Experience the Harbour Bridge at night with waterfront walks, glowing views, and endless places to explore nearby."
+            >
+                <!--_____-->    
+                <img src = "Glebe_Market.jpg">
+                <h3>Glebe Market</h3>
+                <p>Wander through the market, where stalls are filled with thrift finds, handmade jewellery, food, and hidden gems.</p>
+                <!--opera house area like the wark and stuff will include image and text a border-->
+            </div>
+            <div class = "place_card"
+                data-day-image = "Wild_Life_sydney_zoo.jpg"
+                data-night-image = "TimeZone_Image.jpg"
+                data-day-title = "Wild Life Sydney Zoo"
+                data-night-title = "Timezone"
+                data-day-info = "Animal lover? Take your time exploring WILD LIFE Sydney Zoo, with close-up animal encounters along the way."
+                data-night-info = "From laser tag to arcade games, Timezone is the go-to spot for a night of pure, stress-free enjoyment."
+            >
+                <!--_____-->
+                <img src = "Wild_Life_sydney_zoo.jpg">
+                <h3>Wild Life Sydney Zoo</h3>
+                <p>Animal lover? Take your time exploring WILD LIFE Sydney Zoo, with close-up animal encounters along the way.</p>
+                <!--arcade, laxer, bowling, escape will include image and text border-->
+            </div>
+        </div>
+    </section>
+    <div id = "credit">
+        <p style = "padding: 30px; text-align: center;">Explore Sydney - All images are the property of their rightfull owner and are used for illustrative purpose only</p>
+    </div>
+    <script src = "main_page_script.js"></script>
+</body>
+</html>
